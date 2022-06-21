@@ -47,9 +47,9 @@ set hidden
 set encoding=utf-8 nobomb
 
 " Set default encoding to utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936,default,latin1
+"set termencoding=utf-8
+" set fileencoding=utf-8
+"set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936,default,latin1
 
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
