@@ -8,29 +8,31 @@
 
 "let g:auto_save = 1
 
-"let g:custom_leader = ','
-"let g:custom_localleader = ','
+let g:custom_leader = ','
+let g:custom_localleader = ','
 
 "let g:custom_background = 'light'
 "let g:custom_colorscheme = 'gruvbox'
-"let g:custom_colorcolumn = 80
+let g:custom_colorscheme = 'solarized'
+let g:custom_colorcolumn = 80
 
 "let g:custom_guifont = 'Monaco:h13'
+let g:custom_guifont = 'Hack:h13'
 
-"let g:custom_powerline_fonts = 0
+let g:custom_powerline_fonts = 1
 
-"let g:custom_plugins = [
-"      \   ['NLKNguyen/papercolor-theme'],
-"      \ ]
+let g:custom_plugins = [
+      \   ['NLKNguyen/papercolor-theme'],
+      \ ]
 
-"let g:custom_disabled_plugins = [
-"      \   'sneak',
-"      \   'go',
-"      \ ]
+let g:custom_disabled_plugins = [
+      \   'sneak',
+      \   'go',
+      \ ]
 
-"let g:custom_completion_plugin = 'youcompleteme'
-"let g:custom_lint_plugin = 'ale'
+let g:custom_completion_plugin = 'youcompleteme'
+let g:custom_lint_plugin = 'ale'
 
-"let g:custom_ycm_install_options = '--clangd-completer --go-completer --java-completer --rust-completer --ts-completer'
+let g:custom_ycm_install_options = '--clangd-completer --go-completer --java-completer --rust-completer --ts-completer'
 
 "let g:custom_search_engine = 'https://www.google.com/search?q=%s'
