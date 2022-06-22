@@ -18,7 +18,7 @@ if has('gui_running')
   execute 'source' fnamemodify(expand('<sfile>'), ':h') . '/gui.vim'
 else
   " Enable 256 colors
-  if &term == 'xterm' || &term == 'screen'
+  if &term == 'xterm' || &term == 'screen' || &term == 'screen-256colors' || &term == 'putty-256colors' || &term == 'xterm-256colors' || &term == 'putty-256colors'
     set t_Co=256
   endif
   if (has('termguicolors'))
