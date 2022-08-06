@@ -7,4 +7,7 @@
 "highlight Normal guibg=NONE ctermbg=NONE
 
 map <leader>e :bufdo e!<CR>
+let NERDTreeIgnore += ['\.DAT$', '\.LOG1$', '\.LOG1$']
+
+let NERDTreeIgnore += ['\.png$','\.jpg$','\.gif$','\.mp3$','\.flac$', '\.ogg$', '\.mp4$','\.avi$','.webm$','.mkv$','\.pdf$', '\.zip$', '\.tar.gz$', '\.rar$']
 
