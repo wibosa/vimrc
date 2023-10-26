@@ -4,16 +4,77 @@
   "vim.smartRelativeLine": true,
   "vim.sneak": true,
   "vim.sneakReplacesF": true,
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
   "vim.useCtrlKeys": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindings": [
     {
       "before": ["C-k"],
-      "commands": ["editor.action.marker.prevInFiles"]
+      "commands": ["editor.action.marker.prev"]
     },
     {
       "before": ["C-j"],
-      "commands": ["editor.action.marker.nextInFiles"]
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "1"],
+      "commands": ["workbench.action.openEditorAtIndex1"]
+    },
+    {
+      "before": ["<leader>", "2"],
+      "commands": ["workbench.action.openEditorAtIndex2"]
+    },
+    {
+      "before": ["<leader>", "3"],
+      "commands": ["workbench.action.openEditorAtIndex3"]
+    },
+    {
+      "before": ["<leader>", "4"],
+      "commands": ["workbench.action.openEditorAtIndex4"]
+    },
+    {
+      "before": ["<leader>", "5"],
+      "commands": ["workbench.action.openEditorAtIndex5"]
+    },
+    {
+      "before": ["<leader>", "6"],
+      "commands": ["workbench.action.openEditorAtIndex6"]
+    },
+    {
+      "before": ["<leader>", "7"],
+      "commands": ["workbench.action.openEditorAtIndex7"]
+    },
+    {
+      "before": ["<leader>", "8"],
+      "commands": ["workbench.action.openEditorAtIndex8"]
+    },
+    {
+      "before": ["<leader>", "9"],
+      "commands": ["workbench.action.openEditorAtIndex9"]
+    },
+    {
+      "before": ["<leader>", "-"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["<leader>", "+"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["[", "b"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["]", "b"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["[", "t"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["]", "t"],
+      "commands": ["workbench.action.nextEditor"]
     }
   ],
   "vim.insertModeKeyBindingsNonRecursive": [
@@ -36,14 +97,6 @@
     {
       "before": ["C-d"],
       "after": ["<Del>"]
-    },
-    {
-      "before": ["C-n"],
-      "after": ["<Down>"]
-    },
-    {
-      "before": ["C-p"],
-      "after": ["<Up>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -56,8 +109,16 @@
       "commands": ["editor.action.formatDocument"]
     },
     {
+      "before": ["<leader>", "b", "b"],
+      "commands": ["workbench.files.action.focusOpenEditorsView"]
+    },
+    {
       "before": ["<leader>", "b", "d"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "b", "h"],
+      "commands": ["gitlens.showQuickFileHistory"]
     },
     {
       "before": ["<leader>", "b", "w"],
@@ -96,6 +157,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["<leader>", "g", "h"],
+      "commands": ["gitlens.showQuickRepoHistory"]
+    },
+    {
       "before": ["<leader>", "g", "l"],
       "commands": ["git.pull"]
     },
@@ -112,12 +177,28 @@
       "commands": ["workbench.view.scm"]
     },
     {
+      "before": ["<leader>", "j", "d"],
+      "commands": ["editor.action.goToDeclaration"]
+    },
+    {
+      "before": ["<leader>", "j", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
       "before": ["<leader>", "j", "j"],
       "commands": ["editor.action.revealDefinition"]
     },
     {
       "before": ["<leader>", "j", "r"],
       "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "j", "t"],
+      "commands": ["editor.action.goToTypeDefinition"]
+    },
+    {
+      "before": ["<leader>", "n", "j"],
+      "commands": ["revealInExplorer"]
     },
     {
       "before": ["<leader>", "n", "n"],
