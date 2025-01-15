@@ -85,10 +85,12 @@ xmap <Leader><Tab> <Action>(GotoAction)
 omap <Leader><Tab> <Action>(GotoAction)
 
 nmap <Leader>= <Action>(ReformatCode)
+nmap <Leader>: <Action>(RunAnything)
 
 nmap <Leader>bb <Action>(RecentFiles)
 nmap <Leader>bd <Action>(CloseContent)
-nmap <Leader>bh <Action>(LocalHistory.ShowHistory)
+nmap <Leader>bh <Action>(Vcs.ShowTabbedFileHistory)
+vmap <Leader>bh <Action>(Vcs.ShowHistoryForBlock)
 nmap <Leader>bo <Action>(CloseAllEditorsButActive)
 nmap <Leader>bw <Action>(CloseEditor)
 

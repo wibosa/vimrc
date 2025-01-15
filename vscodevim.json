@@ -1,4 +1,5 @@
 {
+  "files.insertFinalNewline": true,
   "vim.incsearch": true,
   "vim.leader": " ",
   "vim.smartRelativeLine": true,
@@ -106,7 +107,16 @@
     },
     {
       "before": ["<leader>", "="],
-      "commands": ["editor.action.formatDocument"]
+      "commands": [
+        {
+          "command": "editor.action.formatDocument",
+          "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+        },
+        {
+          "command": "notebook.format",
+          "when": "notebookEditable && !editorTextFocus && activeEditor == 'workbench.editor.notebook'"
+        }
+      ]
     },
     {
       "before": ["<leader>", "b", "b"],
